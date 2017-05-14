@@ -11,6 +11,7 @@
   "author": "Tom S. <thoschulte@gmail.com>",
 
   "browser_action": {
+     "default_popup":"popup.html",
     "default_title": "Monitoring server360.io"
   },
 
