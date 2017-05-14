@@ -1,0 +1,1 @@
+# de.schulte360.browser.google_chrome_extension
