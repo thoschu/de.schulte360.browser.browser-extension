@@ -1,0 +1,21 @@
+{
+  // Required
+  "manifest_version": 2,
+  "name": "server360.io Monitor-Extension",
+  "version": "17.05.14",
+
+  // Recommended
+  //"default_locale": "en",
+  "description": "A plain text description",
+  "icons": {},
+  "author": "Tom S. <thoschulte@gmail.com>",
+
+  "browser_action": {
+    "default_title": "Monitoring server360.io"
+  },
+
+  "background": {
+    //"scripts": ["background.js"],
+    "page": "background.html"
+  }
+}
