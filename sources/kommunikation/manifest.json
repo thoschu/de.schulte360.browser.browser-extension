@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Hello World",
+  "description": "Hello World",
+  "author": "Tom S.",
+  "version": "0.1.1",
+  "background": {
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Browser Action Hello World"
+  },
+  "permissions": ["notifications", "tabs"]
+}

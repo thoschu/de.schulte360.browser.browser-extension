@@ -1,0 +1,31 @@
+{
+   "background": {
+      "scripts": [ "js/lib.js", "js/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "images/icon-19.png",
+      "default_popup": "popup.html",
+      "default_title": "Trello"
+   },
+   "content_security_policy": "script-src 'self' https://api.trello.com https://ssl.google-analytics.com https://ajax.googleapis.com; object-src 'self'",
+   "description": "One-click access to your Trello Boards",
+   "homepage_url": "http://paulferrett.com/boards-for-trello/",
+   "icons": {
+      "128": "images/icon-128.png",
+      "16": "images/icon-16.png",
+      "48": "images/icon-48.png"
+   },
+   "manifest_version": 2,
+   "name": "Boards for Trello",
+   "oauth2": {
+      "client_id": "665859454684-s6nmohpktccl2srxvc67thbmpclpa36v.apps.googleusercontent.com",
+      "scopes": [ "https://www.googleapis.com/auth/plus.login", "https://www.googleapis.com/auth/chromewebstore.readonly" ]
+   },
+   "permissions": [ "storage", "identity", "https://www.googleapis.com/", "https://trello.com/1/authorize", "https://api.trello.com/*" ],
+   "short_name": "Boards for Trello",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1.1",
+   "web_accessible_resources": [ "settings.html", "images/1x1.gif" ],
+   "author": "Tom S.",
+   "version": "0.1.1"
+}

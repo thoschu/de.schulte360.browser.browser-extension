@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "server360.io Extension",
-  "version": "0.5.14",
+  "version": "0.3.1",
   "description": "Browser extension for server360.io",
   "icons": {},
   "author": "Tom S. <thoschulte@gmail.com>",

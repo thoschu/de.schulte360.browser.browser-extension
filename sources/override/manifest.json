@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Hello World",
+  "description": "Hello World",
+  "author": "Tom S.",
+  "version": "0.1.1",
+  "background": {
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_title": "Browser Action Hello World"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}

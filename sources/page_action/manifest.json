@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Hello World",
+  "description": "Hello World",
+  "author": "Tom S.",
+  "version": "0.1.1",
+  "background": {
+    "scripts": ["background.js"],
+    "peristent": false
+  },
+  "page_action": {
+    "default_title": "Page Action Hello World"
+  },
+  "permissions": ["declarativeContent", "activeTab"]
+}

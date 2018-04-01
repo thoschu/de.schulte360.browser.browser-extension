@@ -1,0 +1,10 @@
+{
+  "extensionName": {
+    "message": "Hallo Welt",
+    "description": "Bezeichnung der Erweiterung"
+  },
+  "logMessage": {
+    "message": "Hallo Welt von der Erweiterung",
+    "description": "Message from the console"
+  }
+}
