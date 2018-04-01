@@ -1,34 +1,24 @@
 {
   "manifest_version": 2,
   "name": "server360.io Extension",
-  "version": "0.5.14",
+  "version": "0.5.16",
   "description": "Browser extension for server360.io",
-  "icons": {},
   "author": "Tom S. <thoschulte@gmail.com>",
   "background": {
-    "page": "background.html"
+    "scripts": ["background.js"],
+    "persistent": false
   },
-  "content_scripts": [
-    {
-      "js": [
-        "js/jquery.min.js",
-        "js/home.js"
-      ],
-      "css": [
-        "css/private.css"
-      ],
-      "matches": [
-        "http://*.thomas-schulte.de/*",
-        "https://*.thomas-schulte.de/*"
-      ]
-    }
-  ],
-  "browser_action": {
-    "default_title": "Server360",
+  "icons": {
+    "16": "assets/icon16.png",
+    "32": "assets/icon32.png"
+  },
+  "page_action": {
+    "default_title": "Page Action TomS.",
     "default_popup": "popup.html"
   },
   "permissions": [
-    "notifications",
-    "tabs"
+    "declarativeContent",
+    "activeTab",
+    "history"
   ]
 }

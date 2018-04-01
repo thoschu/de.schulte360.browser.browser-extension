@@ -2,18 +2,36 @@
  * Created by Tom S.
  */
 (function (that) {
-    chrome.browserAction.setTitle({
-        title: "Server360 Conatinermonitor"
-    });
 
-    chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-        chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
-            chrome.notifications.create({
-                type: "basic",
-                iconUrl: "assets/ts.png",
-                title: "Hey moin: " + tabs.length + '#' + tabs[0].title,
-                message: request.data
-            });
+    chrome.runtime.onInstalled.addListener(function (details) {
+        chrome.declarativeContent.onPageChanged.removeRules(undefined, function () {
+            chrome.declarativeContent.onPageChanged.addRules([
+                {
+                    conditions: [
+                        new chrome.declarativeContent.PageStateMatcher({
+                            pageUrl: {
+                                //hostEquals: 'www.thomas-schulte.de',
+                                hostSuffix: 'thomas-schulte.de',
+                                schemes: [
+                                    'http',
+                                    'https'
+                                ]
+                            },
+                            css: [
+                                "input[type='text']"
+                            ]
+                        })
+                    ],
+                    actions: [
+                        new chrome.declarativeContent.ShowPageAction()
+                    ]
+                }
+            ]);
         });
     });
+
+    chrome.pageAction.onClicked.addListener(function (info) {
+        chrome.tabs.executeScript(null, {code: ' console.info("info")'});
+    });
+
 })(this);
