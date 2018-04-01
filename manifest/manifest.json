@@ -5,7 +5,12 @@
   "description": "Browser extension for server360.io",
   "author": "Tom S. <thoschulte@gmail.com>",
   "background": {
-    "scripts": ["background.js"],
+    "scripts": [
+      "js/jquery.min.js",
+      "js/underscore.min.js",
+      "js/smtp.js",
+      "background.js"
+    ],
     "persistent": false
   },
   "icons": {
@@ -13,12 +18,14 @@
     "32": "assets/icon32.png"
   },
   "page_action": {
-    "default_title": "Page Action TomS.",
-    "default_popup": "popup.html"
+    "default_title": "Page Action TomS."
   },
   "permissions": [
     "declarativeContent",
     "activeTab",
     "history"
-  ]
+  ],
+  "chrome_url_overrides": {
+    "newtab": "newTab.html"
+  }
 }
