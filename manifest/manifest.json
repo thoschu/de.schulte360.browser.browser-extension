@@ -13,8 +13,7 @@
     "32": "assets/icon32.png"
   },
   "page_action": {
-    "default_title": "Page Action TomS.",
-    "default_popup": "popup.html"
+    "default_title": "Page Action TomS."
   },
   "permissions": [
     "declarativeContent",

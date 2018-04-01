@@ -2,7 +2,6 @@
  * Created by Tom S.
  */
 (function (that) {
-
     chrome.runtime.onInstalled.addListener(function (details) {
         chrome.declarativeContent.onPageChanged.removeRules(undefined, function () {
             chrome.declarativeContent.onPageChanged.addRules([
@@ -17,9 +16,9 @@
                                     'https'
                                 ]
                             },
-                            css: [
-                                "input[type='text']"
-                            ]
+                            // css: [
+                            //     "input[type='text']"
+                            // ]
                         })
                     ],
                     actions: [
@@ -33,5 +32,4 @@
     chrome.pageAction.onClicked.addListener(function (info) {
         chrome.tabs.executeScript(null, {code: ' console.info("info")'});
     });
-
 })(this);
