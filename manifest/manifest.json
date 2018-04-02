@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "server360.io Extension",
+  "name": "__MSG_extensionName__",
   "version": "0.3.1",
   "description": "Browser extension for server360.io",
   "icons": {},
@@ -33,5 +33,10 @@
   ],
   "chrome_url_overrides": {
     "newtab": "newTab.html"
+  },
+  "default_locale": "en",
+  "icons": {
+    "16": "assets/ts.png",
+    "32": "assets/ts.png"
   }
 }

@@ -3,7 +3,8 @@
  */
 (function (that) {
     chrome.browserAction.setTitle({
-        title: "Server360 Conatinermonitor"
+        //title: "Server360 Conatinermonitor"
+        title: chrome.i18n.getMessage("buttonName")
     });
 
     chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {

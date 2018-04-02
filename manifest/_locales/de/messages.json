@@ -1,0 +1,10 @@
+{
+  "extensionName": {
+    "message": "Hallo server360.io",
+    "description": "Name der Extension"
+  },
+  "buttonName": {
+    "message": "Server360 Conatinermonitor DE",
+    "description": "Name der Buttons"
+  }
+}
